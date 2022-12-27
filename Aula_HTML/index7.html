@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="programaçao,html,css,javascript">
+    <meta name="author" content="WillianPSA">
+    <title>Formularios</title>
+    <!-- Alt+z organiza a tela minimizada -->
+</head>
+
+<body>
+    <a href="index1.html" target="_parent"> index 1</a><br>
+    <a href="index2.html" target="_parent"> index 2</a><br>
+    <a href="index3.html" target="_parent"> index 3</a><br>
+    <a href="index4.html" target="_parent"> index 4</a><br>
+    <a href="index5.html" target="_parent"> index 5</a><br>
+    <a href="index6.html" target="_parent"> index 6</a><br>
+    <a href="index7.html" target="_parent"> index 7</a><br>
+    <h1> Formulario</h1>
+    <form>
+        <!-- label é a legenda para o campo, o for associa a legenda ao campo de formulario relacionado -->
+        <label for="campo_nome">nome: </label>
+        <!-- Input é o campo de formulario, deve-se determinar o tipo de informação a ser digitada, texto, senha, email, placeholder é uma sombra de texto modelo dentro do formulario -->
+        <!-- Required é o atributo para tornar o campo obrigatorio -->
+        <input type="text" id="campo_nome" placeholder="type text" required>
+        <br><br>
+        <label for="campo_email">email: </label><input type="email" id="campo_email" placeholder=" type email"
+            required><br><br>
+        <label for="campo_senha">senha: </label><input type="password" id="campo_senha" placeholder="type password"
+            required>
+        <br>
+        <!-- input do tipo submit é um botão que envia os dados coletados no formulario, value é o nome do botão -->
+
+        <hr>
+
+        <!-- o input tipo radio é o cri opção unica de marcar, para funcionar, todas os inputs das opções devem ter o mesmo name -->
+        <h2> Quais animais de estimação você mais gosta?(tipo radio)</h2>
+
+        <input type="radio" id="dog" name="seletor" value="cachorro"> <label for="dog"> cachorro</label><br><br>
+        <input type="radio" id="cat" name="seletor" value="gato"> <label for="cat"> gato</label><br><br>
+        <input type="radio" id="bird" name="seletor" value="passaro"> <label for="bird"> passaro</label><br><br>
+        <hr>
+        <!-- o input do tipo checkbox é o que cria uma lista de multiplas opções de escolha os item da lista não precisa ter o mesmo name -->
+        <h2> Quais animais de estimação você tem em casa?(tipo checkbox)</h2>
+
+        <input type="checkbox" id="dog" value="cachorro"><label for="dog">cachorro</label><br><br>
+
+        <input type="checkbox" id="bird" value="passaro"><label for="bird">passaro</label><br><br>
+
+        <input type="checkbox" id="cat" value="gato"><label for="cat">gato</label>
+        <hr>
+        <h2> Escolha uma cor(tipo select)</h2>
+        <select name="cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="verde">verde</option>
+            <option value="azul">azul</option>
+            <option value="amarelo">amarelo</option>
+            <option value="branco">branco</option>
+        </select>
+        <br><br>
+        <h2> Digite sua mensagem(textarea)</h2>
+        <textarea required name="mensagem" placeholder="Digite sua mensagem" rows="15" cols="55"></textarea>
+        <br><br> <input type="submit" value="Enviar Formulario(botão padrão)"> <br><br>
+        <button> Clique aqui (botão generico)</button>
+    </form>
+</body>
+
+</html>

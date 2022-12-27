@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o meu primeiro site">
+    <meta name="keywords" content="programaçao,html,css,javascript">
+    <meta name="author" content="WillianPSA">
+    <title>HTML semantico</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .topo {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 16px;
+            float: left;
+            display: block;
+            text-decoration: none;
+        }
+
+        .menu h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .coluna1 {
+            background-color: blue;
+            float: left;
+            width: 50%;
+            padding: 15px;
+            margin: 10px 0px;
+        }
+
+        .coluna2 {
+            background-color: yellow;
+            float: right;
+            width: 50%;
+            padding: 15px;
+            margin: 10px 0px;
+
+        }
+
+        .coluna1 p {
+            text-align: left;
+        }
+
+        .coluna2 h2 {
+            text-align: right;
+        }
+
+        .coluna2 p {
+            text-align: right;
+        }
+
+        footer {
+            background-color: red;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 20px;
+            color: white;
+        }
+    </style>
+    <!-- Alt+z organiza a tela minimizada -->
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1> topo </h1>
+        <p> parte do topo</p>
+    </header>
+    <nav class="menu">
+        <h2> Coluna</h2>
+        <a href="index1.html" target="_parent"> index 1</a>
+        <a href="index2.html" target="_parent"> index 2</a>
+        <a href="index3.html" target="_parent"> index 3</a>
+        <a href="index4.html" target="_parent"> index 4</a>
+        <a href="index5.html" target="_parent"> index 5</a>
+        <a href="index6.html" target="_parent"> index 6</a>
+        <a href="index7.html" target="_parent"> index 7</a>
+    </nav>
+    <section class="coluna1">
+        <h2>Coluna</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi repudiandae deleniti corporis alias
+            officia totam dolore quos labore reiciendis, soluta iste hic pariatur iusto veritatis aliquam veniam
+            consequuntur molestias.</p>
+    </section>
+    <section class="coluna2">
+        <h2>Coluna</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi repudiandae deleniti corporis alias
+            officia totam dolore quos labore reiciendis, soluta iste hic pariatur iusto veritatis aliquam veniam
+            consequuntur molestias.</p>
+    </section>
+    <footer>
+        <p> aqui tem um rodapé</p>
+    </footer>
+
+
+
+</body>
+
+</html>

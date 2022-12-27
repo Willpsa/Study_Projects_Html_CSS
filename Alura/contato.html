@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contato - Barbearia Willian</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="imagens\logo.png" alt=" logo da barbearia willian"></h1>
+
+				<! alt é a tag para auxiliar pessoas com deficiencia visual adicionando um resumo do que é a imagem>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html"> Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+
+			<! é conteudo principal dentro do body, topico central>
+			<! form é a tag para criação de formularios>
+
+			<form>
+				<! label é a etiqueta do input, sempre associados, o for associa o label ao identificador do input>
+
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone"class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<! o tipo input type facilita ao usuario, pricipalmente o mobile, na hora de preencher o formulario, para campos tipo telefone o type é tel, numeros é number, email é email, formato texto é text e por ai vai.
+				<! campos que são obrigatorios utiliza-se required>
+				<! placeholder adiciona um pretexto ao formulario>
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+				<! textarea dar a possibilidade de o usuario adicionar mais de uma linha de texto, pode-se configurar o numero de colunas e linhas.>
+
+				<fieldset>
+
+					<! fieldset é divisão para textos dentro de um formulario>
+					<! em um fieldset n utiliza-se a tag P para paragrafo, legend é a tag padrão>
+
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whats"><input type="radio" name="contato" value="whatsapp" id="radio-whats"checked> Whatsapp</label>
+
+					<! input do tipo radio para selecão de uma unica opção precisa fazer parte de um grupo atraves da tag name>
+					<! checked preseleciona uma opção>
+
+				</fieldset>
+				<fieldset>
+					<legend>Qual horário deseja ser atendido?</legend>
+					<select> 
+						<! campo do tipo select (seletor) é linkado com option campo do conteudo>
+						<option class="opcao"> Manhã</option>
+						<option class="opcao"> Tarde</option>
+						<option class="opcao"> Noite</option>
+					</select>
+
+				</fieldset>
+
+				<! input tipo checkbox permite selecionar e disselecionar uma opção.>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades por e-mail?</label>
+
+				<! input tipo submit é para envio dos dados para um local de armazenamento, o campo value determinar o texto do botão submit>
+
+				<input type="submit" value="Enviar Formulário" class="enviar">
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td> 8h ~ 20h</td>
+					</tr>	
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>	
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+					    <td colspan="2">Não atendemos aos finais de semana</td> 
+					</tr>
+				</tbody>
+			</table>
+			
+		</main>
+		<footer>
+			<img src="imagens\logo-branco.png" alt="logo da barbearia willian">
+			<p class="copyright">&copy;Copyright Barbearia Willian - 2022</p>2
+		</footer>
+	</body>
+</html>
+
+<! margin é o espaçamento externo, padding é o espaçamento interno>
+<! inline ocupam apenas o tamanho do seu conteudo, apos o label automanticamente na mesama linha segue outro input>
+<! block quebra a linha do conteudo>
+<! "objeto":hover é a tag para interação com a seta do mouse>
+<! transition altera o tempo de transição do elemento>
+<! cursor é a tag que altera o elemento da seta do teclado>
+<! transform altera a propriedade do objeto, pode girar, aumentar, etc>
+<! table é a tag de tabela, table roll tr é uma linha, celulas sao td>
+<! o cabeçario da tabela é marcado pela tag Thead, seguido da tag th>
+< o corpo da tabela,conteudo, é marcado pela tag TBODY>
+<! tfoot é o rodapé da tabela
+<! a tag colspan serve para agrupar celulas de uma mesma linha>

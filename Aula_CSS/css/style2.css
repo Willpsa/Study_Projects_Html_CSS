@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .borda {
+    border: 1px solid red;
+} */
+/*
+h1,
+p {
+    display: block;
+} */
+
+/* #p1:hover {
+    display: none;
+} */
+/*
+li {
+    display: inline;
+} */
+/* li{
+    display: inline-block;
+    width: 33%;
+    height: 100px;
+} */
+/* .green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+} */
+
+/* div {
+    width: 33%;
+    height: 50px;
+    display: inline-block;
+} */
+
+a.botao {
+    width: 50%;
+    height: 30px;
+    margin: 20px 20px;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+
+/* div {
+    border: 1px solid blue;
+} */
+
+.div02 {
+    max-width: 800px;
+}
+
+.div01 {
+    max-width: 800px;
+}
+
+/* position absolute, posiciona o elemento filho em relaçao ao elemento pai, desde que o elemento pai não esteja em posição static (default) */
+.container {
+    position: relative;
+    background: blue;
+    width: 100%;
+    height: 400px;
+
+}
+
+/* position static é o posicionamento padrao
+position relative elemento de acordo com as propriedade de posicionamento
+z-index dar valor para o elemento para que se possa dar ordem de posicionamento*/
+h1,
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 5px blue;
+}
+
+.div1 {
+    /* position: relative;
+    top: 30px;
+    left: 70px; */
+    width: 30%;
+    height: 100px;
+    background: yellow;
+    display: inline-block;
+    z-index: 0;
+}
+
+/* position:sticky  o objeto tem um posicionamento pegajoso em relacao ao objeto pai */
+.div2 {
+    /* position: relative;*/
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    width: 30%;
+    height: 100px;
+    background: red;
+    display: inline-block;
+
+}
+
+.div3 {
+    width: 30%;
+    height: 100px;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+}
+
+/* position:fixed ancora o elemento na posição configurada na tela */
+.flutuando {
+    background: darkgreen;
+    color: yellow;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    padding: 20px 0 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* overflow é usado quando o objeto excede o tamanho do seu container, por padrao a propriedade visible. scroll indexa todo o objeto dentro do container gerando uma barra de rolagem, hidden esconde a parte "vazante" do objeto e não cria uma barra de rolagem */
+.overflowexemplo {
+    background: cyan;
+    height: 100px;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+
+.overflowexemplo:hover {
+    height: auto;
+    overflow: visible;
+}
+
+.container {
+    border: 1px solid black;
+    overflow: auto;
+    margin: 10px 10px;
+}
+
+.container img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.img0 {
+    border: 1px solid red;
+    margin: 10px 10px;
+}
+
+.img0 img {
+    padding: 5px;
+}
+
+.img1:hover {
+    opacity: 0.2;
+}
+
+.img2 {
+    opacity: 0.7;
+}
+
+.img3 {
+    opacity: 0.9;
+}
+
+ul {
+    background: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background: red;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 150px;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#gradiente {
+    margin: 20px 20px;
+    width: 100%;
+    height: 300px;
+    background: blue;
+    background-image: linear-gradient(90deg, pink, blue, red, green, yellow);
+
+}
+
+#gradiente1 {
+    margin: 20px 20px;
+    width: 100%;
+    height: 300px;
+    background: blue;
+    background-image: radial-gradient(pink 50%, red, blue, green, yellow);
+
+}
+
+.box {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 30%;
+    height: 300px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+}
+
+.imgcard {
+    max-width: 100%;
+}
+
+.box1 {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 30%;
+    height: auto;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box1 p,
+.box p {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.reduzido {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box1:hover .reduzido {
+    white-space: normal;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: black;
+}
+
+#mediaqp {
+    color: lightblue;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.divmediaq {
+    margin-bottom: 40px;
+}
+
+.flex-pai {
+    background: blue;
+    display: flex;
+    height: 600px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.flex-pai div {
+    flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    /* margin: 5px; */
+    padding: 30px;
+    text-align: center;
+
+
+}
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: blue;
+    }
+
+    h3 {
+        font-size: 20px
+    }
+
+    /* .flex-pai {
+        flex-direction: column;
+    } */
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+    body {
+        background: green;
+    }
+
+    h3 {
+        font-size: 25px
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+    body {
+        background: yellow;
+    }
+
+    h3 {
+        font-size: 30px
+    }
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: red;
+    }
+
+    h3 {
+        font-size: 40px
+    }
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background: violet;
+
+        h3 {
+            font-size: 50px
+        }
+    }
+}
